@@ -33,7 +33,7 @@ public class Person {
     
     public int getAge() {
         Calendar today = GregorianCalendar.getInstance();
-        return (int) (milliSecondsToYear(today.getTimeInMillis() - birthdate.getTimeInMillis()));
+        return (int) (millisSecondsToYear(today.getTimeInMillis() - birthdate.getTimeInMillis()));
     }
     
     private long millisSecondsToYear(long milles) {
